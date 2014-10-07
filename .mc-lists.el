@@ -161,6 +161,7 @@
         adv-insert-new-number
         beginning-of-buffer
         cleanup-buffer
+        completion-at-point
         describe-key
         dired-toggle-read-only
         edebug-next-mode

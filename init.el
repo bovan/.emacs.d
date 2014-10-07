@@ -79,7 +79,9 @@
      gitignore-mode
      clojure-mode
      groovy-mode
-     prodigy)))
+     prodigy
+     cider
+     php-mode)))
 
 (condition-case nil
     (init--install-packages)
@@ -115,7 +117,7 @@
 (require 'setup-ffip)
 (require 'setup-html-mode)
 (require 'setup-paredit)
-
+(require 'php-mode)
 (require 'prodigy)
 (global-set-key (kbd "C-x M-m") 'prodigy)
 
