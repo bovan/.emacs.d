@@ -79,9 +79,7 @@
      gitignore-mode
      clojure-mode
      groovy-mode
-     prodigy
-     cider
-     cider-tracing)))
+     prodigy)))
 
 (condition-case nil
     (init--install-packages)
