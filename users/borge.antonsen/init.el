@@ -13,10 +13,6 @@
 (define-key global-map (kbd "M-s +") 'zoom-in)
 (define-key global-map (kbd "M-s -") 'zoom-out)
 
-;; No more scrolling surprises
-(global-unset-key (kbd "C-v"))
-(global-unset-key (kbd "M-v"))
-
 ;; No graphics please o.O
 (setq speedbar-use-images nil)
 
@@ -44,3 +40,9 @@
 ;; Use GNU ls - install with:
 ;;    brew install xz coreutils
 (setq insert-directory-program "gls")
+
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2)
+  )
+(add-hook 'web-mode-hook  'my-web-mode-hook)
