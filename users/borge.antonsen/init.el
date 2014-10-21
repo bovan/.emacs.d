@@ -2,10 +2,6 @@
 (setq-default js2-basic-offset 2)
 (setq js-indent-level 2)
 
-;; Disallow scrolling with mouse wheel
-(when window-system
-  (mouse-wheel-mode -1))
-
 ;; Monday ftw
 (set-variable 'calendar-week-start-day 1)
 
@@ -36,6 +32,10 @@
 (add-to-list 'auto-mode-alist '("\\.tpl.php$" . html-mode))
 (eval-after-load "php-mode"
   '(define-key php-mode-map (kbd "C-.") nil))
+(add-hook 'php-mode-hook
+   '(lambda ()
+     (setq c-basic-offset 2)
+))
 
 ;; Use GNU ls - install with:
 ;;    brew install xz coreutils
