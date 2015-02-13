@@ -103,12 +103,7 @@
    ((js2r--does-not-need-semi) "")
    (:else ";")))
 
-(js2r--setup-wrapping-pair "(" ")")
 (js2r--setup-wrapping-pair "{" "}")
-(js2r--setup-wrapping-pair "[" "]")
-(js2r--setup-wrapping-pair "\"" "\"")
-(js2r--setup-wrapping-pair "'" "'")
-
 ;;
 
 (define-key js2-mode-map (kbd "C-c RET jt") 'jump-to-test-file)

@@ -181,3 +181,9 @@ Both PATTERN and CONTENTS are matched as regular expressions."
   (interactive)
   (kmacro-push-ring)
   (edit-kbd-macro 'view-lossage))
+
+(defun dos2unix ()
+  "Replace DOS eolns CR LF with Unix eolns CR"
+  (interactive)
+    (goto-char (point-min))
+      (while (search-forward "\r" nil t) (replace-match "")))

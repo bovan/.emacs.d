@@ -210,6 +210,7 @@
 
 ;; Misc
 (require 'project-archetypes)
+(require 'whitespace-cleanup-mode)
 (require 'my-misc)
 (when is-mac (require 'mac))
 
